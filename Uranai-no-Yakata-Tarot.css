@@ -1,0 +1,145 @@
+/*jsのタロット出力関連*/
+.gyaku {
+    transform: scale(1, -1);
+}
+
+.sei {
+    transform: scale(1, 1);
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu {
+    transform: translateX(100vw);
+    transition: all .3s linear;
+}
+
+/* アニメーション後のメニューの状態 */
+.menu.is-active {
+    transform: translateX(0);
+}
+
+/*本体css関連*/
+body {
+  /* 画像ファイルの指定 */ 
+    background-image: url('icooon-mono/utyuu.jpg');
+
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /*background: url(background-photo.jpg) center center / cover no-repeat fixed;*/
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 970px;
+    height: auto;
+    clear: both;
+    
+}
+
+nav.global {
+    height: 30px;
+    margin-top: 5px;
+    clear: both;
+}
+
+nav.global ul li {
+    width: 20%;
+    float: left;
+}
+
+nav.global ul li a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    border-right: 1px solid #444;
+    background-color: rgb(255, 216, 182);
+}
+
+
+nav.global li:nth-child(1) a span,
+nav.global li:nth-child(2) a span,
+.catalog nav.global li:nth-child(3)a span,
+.common nav.global li:nth-child(4)a span {
+    color: #b27616;
+    border-bottom: 3px solid #b27616;
+    padding: 0 1em;
+
+}
+
+header {
+    background-color: #513252;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+header h1 {
+    color: #CA4E79;
+    float: left;
+    
+}
+
+header div {
+    float: left;
+}
+
+
+h1 {
+    color: #CA4E79;
+}
+
+.container {
+    margin: 0px 30px 30px;
+    background-color: #FFFFCC;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h2,
+h3,
+p {
+    color: #444;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.25em;
+    border-left: 14px solid #7A4069;
+    padding-left: 10px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-left: 24px;
+    text-align: justify;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #513252;
+    color: #CA4E79;
+    padding: 20px 30px;
+}
